@@ -17,8 +17,7 @@ const ConfirmarCuenta = () => {
    
       const confirmarCuenta = async ()=>{
         try {       
-          // const url = `/veterinarios/confirmar/${id}`;   
-          const url = `/confirmar/${id}`;
+          const url = `/veterinarios/confirmar/${id}`;   
           const {data} = await clienteAxios(url);
           setCuentaConfirmada(true);
           setAlerta({
